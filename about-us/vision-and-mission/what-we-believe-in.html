@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<!-- Mirrored from theprotraders.com/about-us/vision-and-mission/what-we-believe-in by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 May 2017 00:36:53 GMT -->
+<head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100341673-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="alternate" hreflang="bg-BG" href="../../bg/index.html" />
+
+<!--Meta-->
+<title>The ProTrade -  What we Believe In </title>
+<meta name="description" content="The ProTrade - Access Global Financial Markets">
+<meta name="keywords" content="">
+
+<!--Socials FB-->
+<meta property="og:locale" content="en_EN" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="../../index.html"/>
+<meta property="og:title" content="The ProTrade" />
+<meta property="og:site_name" content="The ProTrade"/>
+<meta property="og:description" content="Access Global Financial Markets" />
+<meta property="og:image" content="../../logo.npg" />
+
+<!--CSS-->
+<link rel="stylesheet" href="../../assets/css/base.css" />
+<link rel="stylesheet" href="../../assets/css/site.css" />
+<link rel="stylesheet" href="../../assets/css/nav.css" />
+<link rel="stylesheet" href="../../assets/css/font-awesome.css" />
+<!--JS-->
+<script src='../../assets/js/scripts.js'></script>
+<script src='../../assets/js/ticker.js'></script>
+	<script src="https://klimurk.github.io/metatrader/assets/js/jquery.js"></script>
+	<script>
+	$(function () {
+		$("#header").load("https://klimurk.github.io/metatrader/header.html");
+		$("#footer").load("https://klimurk.github.io/metatrader/footer.html");
+	});
+</script>
+
+</head>
+<body>
+	<div id="header"></div>
+
+
+<div class="grid grid-pad breadcrumps about-us">
+  <div class="col-7-12 page-title">
+	What we Believe In
+  </div>
+    <div class="col-5-12 links">
+    	<a href="../../index.html">Home</a> <i class="fa fa-angle-right"></i>
+        About Us
+	</div>
+</div>
+
+<div class="grid grid-pad container-page">
+	<div class="col-4-12 left-sidebar">
+		<ul class="main">
+        	<h3>About Us</h3>
+			<li><a href="../why-mpt.html"><i class="fa fa-angle-right"></i>Why The ProTrade</a></li>
+			<li><span>Vision & Mission</span>
+				<ul>
+					<li><a class="current" href="what-we-believe-in.html"><i class="fa fa-angle-right"></i>What we believe in</a></li>
+					<li><a href="focused-on-clients.html"><i class="fa fa-angle-right"></i>Focused on clients</a></li>
+				</ul>
+			</li>
+			<li><span>Legal Aspects</span>
+				<ul>
+					<li><a href="../legal-aspects/legal-declaration.html"><i class="fa fa-angle-right"></i> Legal declaration</a></li>
+					<li><a href="../legal-aspects/website-usage.html"><i class="fa fa-angle-right"></i> Website usage</a></li>
+					<li><a href="../legal-aspects/risk-declaration.html"><i class="fa fa-angle-right"></i> Risk declaration</a></li>
+				</ul>
+			</li>
+			<li><a href="../careers.html"><i class="fa fa-angle-right"></i> Careers</a></li>
+		</ul>
+
+
+     </div>
+     <div class="col-8-12 content-page">
+     	<h1>We are dedicated to delivering a hi-tech trading environment to our clients, wherever they are</h1>
+		<div class="separator"></div>
+        <p>Our mission is to participate in the development of a culture of investing in financial markets in the European Union, as one of the leading retail brokerage houses. We work towards achieving this goal by developing our investment services on the basis of cutting-edge trading technology, seeking the possibilities for innovation in everything we do and building fair relationships with our closest environment.</p>
+        <p><strong>Technology</strong><br>
+         We believe that technology is the key factor when challenging the dynamics of the modern financial markets. What we provide to our clients is the trading platform of the next generation, that is capable of handling even the most sophisticated investment strategies.
+        </p>
+        <p><strong>Clear Rules</strong><br>
+         We believe that clearly defined rules and mutual respect constitute the basis to build fair and honest relations with our closest environment – our clients, partners and employees.
+        </p>
+        <p><strong>Team Spirit</strong><br>
+         For us the care for the development and satisfaction of our employees is the key to success. Our employees are passionate and knowledgeable, providing our clients with the support whenever it is needed.
+        </p>
+
+     </div>
+</div>
+
+
+
+<div id="footer"></div>
+
+<script type="text/javascript">
+function StockPriceTicker(){{var t="",e="",a="",i="",n="",s="^NDX,^GSPC,^HSI,^N225,^FCHI,^GDAXI,^FTSE",c="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22"+s+"%22)&env=store://datatables.org/alltableswithkeys",o="";$.get(c,function(s){$(s).find("quote").each(function(){t=$(this).attr("symbol"),$(this).find("Name").each(function(){e=$(this).text()}),$(this).find("LastTradePriceOnly").each(function(){a=$(this).text()}),$(this).find("Change").each(function(){i=$(this).text()}),$(this).find("PercentChange").each(function(){n=$(this).text()});var s="GreenText",c="up_green";parseFloat(i)<0&&(s="RedText",c="down_red"),o=o+"<span class='"+s+"'>",o=o+"<span class='quote'>"+e+" ("+t+")</span> ",o=o+parseFloat(a).toFixed(2)+" ",o=o+"<span class='"+c+"'></span>"+parseFloat(Math.abs(i)).toFixed(2)+" (",o=o+parseFloat(Math.abs(n.split("%")[0])).toFixed(2)+"%)</span>"}),$("#dvStockTicker").html(o),$("#dvStockTicker").jStockTicker({interval:30,speed:2})})}}$(window).load(function(){StockPriceTicker(),setInterval(function(){StockPriceTicker()},6e4)});
+</script>
+<script>
+$(document).ready(function(e){e("#flexinav1").flexiNav({flexinav_effect:"flexinav_hover",flexinav_show_duration:150,flexinav_hide_duration:150,flexinav_show_delay:150,flexinav_trigger:!1,flexinav_hide:!1,flexinav_scrollbars:!0,flexinav_scrollbars_height:360,flexinav_responsive:!0})});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52762597-4', 'auto');
+  ga('send', 'pageview');
+
+</script></body>

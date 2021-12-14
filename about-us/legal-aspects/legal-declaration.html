@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<!--
+Client Site:	theprotraders
+Design:			Co6Design / Tanyo Boychev
+CodeBase:		Co6Design / Tanyo Boychev
+Web:			www.co6design.com
+rev:			1.2
+-->
+<html lang="en">
+
+<!-- Mirrored from theprotraders.com/about-us/legal-aspects/legal-declaration by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 May 2017 00:36:53 GMT -->
+<head>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100341673-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+.
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="alternate" hreflang="bg-BG" href="../../bg/index.html" />
+
+<!--Meta-->
+<title>The ProTrade -  Legal Declaration </title>
+<meta name="description" content="The ProTrade - Access Global Financial Markets">
+<meta name="keywords" content="">
+
+<!--Socials FB-->
+<meta property="og:locale" content="en_EN" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="../../index.html"/>
+<meta property="og:title" content="The ProTrade" />
+<meta property="og:site_name" content="The ProTrade"/>
+<meta property="og:description" content="Access Global Financial Markets" />
+<meta property="og:image" content="../../logo.png" />
+
+<!--CSS-->
+<link rel="stylesheet" href="../../assets/css/base.css" />
+<link rel="stylesheet" href="../../assets/css/site.css" />
+<link rel="stylesheet" href="../../assets/css/nav.css" />
+<link rel="stylesheet" href="../../assets/css/font-awesome.css" />
+<!--JS-->
+<script src='../../assets/js/scripts.js'></script>
+<script src='../../assets/js/ticker.js'></script>
+
+<script src="https://klimurk.github.io/metatrader/assets/js/jquery.js"></script>
+<script>
+	$(function () {
+		$("#header").load("https://klimurk.github.io/metatrader/header.html");
+		$("#footer").load("https://klimurk.github.io/metatrader/footer.html");
+	});
+</script>
+
+
+</head>
+<body>
+	<div id="header"></div>
+
+
+<div class="grid grid-pad breadcrumps about-us">
+  <div class="col-7-12 page-title">
+		 Legal Declaration
+  </div>
+    <div class="col-5-12 links">
+    	<a href="../../index.html">Home</a> <i class="fa fa-angle-right"></i>
+        About Us
+	</div>
+</div>
+
+<div class="grid grid-pad container-page">
+	<div class="col-4-12 left-sidebar">
+		<ul class="main">
+        	<h3>About Us</h3>
+			<li><a href="../why-mpt.html"><i class="fa fa-angle-right"></i>Why The ProTrade</a></li>
+			<li><span>Vision & Mission</span>
+				<ul>
+					<li><a href="../vision-and-mission/what-we-believe-in.html"><i class="fa fa-angle-right"></i>What we believe in</a></li>
+					<li><a href="../vision-and-mission/focused-on-clients.html"><i class="fa fa-angle-right"></i>Focused on clients</a></li>
+				</ul>
+			</li>
+			<li><span>Legal Aspects</span>
+				<ul>
+					<li><a class="current" href="legal-declaration.html"><i class="fa fa-angle-right"></i> Legal declaration</a></li>
+					<li><a href="website-usage.html"><i class="fa fa-angle-right"></i> Website usage</a></li>
+					<li><a href="risk-declaration.html"><i class="fa fa-angle-right"></i> Risk declaration</a></li>
+				</ul>
+			</li>
+			<li><a href="../careers.html"><i class="fa fa-angle-right"></i> Careers</a></li>
+		</ul>
+
+
+     </div>
+     <div class="col-8-12 content-page">
+     <h1>Modern technology investment services of The ProTrade are provided on a solid legal basis</h1>
+     <div class="separator">
+       <!-- <p>The company is a representative of the Trade.com which is an authorised or regulated by the Financial Conduct Authority (FCA), upon which it is authorized to provide investment services under, Financial Conduct Authority (FCA) capital market undertakings act, as amended (herein referred to as “capital market undertakings act”).</p>-->
+     </div>
+     <p>The company provides neither investment advice nor investment recommendation as defined by the capital market undertakings act.</p>
+     <p>Any information contained within websites operated by the company can by no means be considered as a call for, proposal or an incentive to make an investment decision (to buy, sell or hold) related to an investment instrument.</p>
+
+     </div>
+</div>
+
+<div id="footer"></div>
+</div>
+
+<script type="text/javascript">
+function StockPriceTicker(){{var t="",e="",a="",i="",n="",s="^NDX,^GSPC,^HSI,^N225,^FCHI,^GDAXI,^FTSE",c="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22"+s+"%22)&env=store://datatables.org/alltableswithkeys",o="";$.get(c,function(s){$(s).find("quote").each(function(){t=$(this).attr("symbol"),$(this).find("Name").each(function(){e=$(this).text()}),$(this).find("LastTradePriceOnly").each(function(){a=$(this).text()}),$(this).find("Change").each(function(){i=$(this).text()}),$(this).find("PercentChange").each(function(){n=$(this).text()});var s="GreenText",c="up_green";parseFloat(i)<0&&(s="RedText",c="down_red"),o=o+"<span class='"+s+"'>",o=o+"<span class='quote'>"+e+" ("+t+")</span> ",o=o+parseFloat(a).toFixed(2)+" ",o=o+"<span class='"+c+"'></span>"+parseFloat(Math.abs(i)).toFixed(2)+" (",o=o+parseFloat(Math.abs(n.split("%")[0])).toFixed(2)+"%)</span>"}),$("#dvStockTicker").html(o),$("#dvStockTicker").jStockTicker({interval:30,speed:2})})}}$(window).load(function(){StockPriceTicker(),setInterval(function(){StockPriceTicker()},6e4)});
+</script>
+<script>
+$(document).ready(function(e){e("#flexinav1").flexiNav({flexinav_effect:"flexinav_hover",flexinav_show_duration:150,flexinav_hide_duration:150,flexinav_show_delay:150,flexinav_trigger:!1,flexinav_hide:!1,flexinav_scrollbars:!0,flexinav_scrollbars_height:360,flexinav_responsive:!0})});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52762597-4', 'auto');
+  ga('send', 'pageview');
+
+</script></body>

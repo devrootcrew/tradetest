@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100341673-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+<!--
+Client Site:	The ProTrade
+Design:			Co6Design / Tanyo Boychev
+CodeBase:		Co6Design / Tanyo Boychev
+Web:			www.co6design.com
+rev:			1.2
+-->
+<html lang="en">
+
+<!-- Mirrored from theprotraders.com/education/first-step/transaction-making/rollover-issues by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 May 2017 00:37:51 GMT -->
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="alternate" hreflang="bg-BG" href="../../../bg/index.html" />
+
+<!--Meta-->
+<title>The ProTrade - Rollover Issue</title>
+<meta name="description" content="The ProTrade - Access Global Financial Markets">
+<meta name="keywords" content="">
+
+<!--Socials FB-->
+<meta property="og:locale" content="en_EN" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="../../../index.html"/>
+<meta property="og:title" content="The ProTrade" />
+<meta property="og:site_name" content="The ProTrade"/>
+<meta property="og:description" content="Access Global Financial Markets" />
+<meta property="og:image" content="../../../logo.png" />
+
+<!--CSS-->
+<link rel="stylesheet" href="../../../assets/css/base.css" />
+<link rel="stylesheet" href="../../../assets/css/site.css" />
+<link rel="stylesheet" href="../../../assets/css/nav.css" />
+<link rel="stylesheet" href="../../../assets/css/font-awesome.css" />
+<!--JS-->
+<script src='../../../assets/js/scripts.js'></script>
+<script src='../../../assets/js/ticker.js'></script>
+<script src="https://klimurk.github.io/metatrader/assets/js/jquery.js"></script>
+	<script>
+		$(function () {
+			$("#header").load("https://klimurk.github.io/metatrader/header.html");
+			$("#footer").load("https://klimurk.github.io/metatrader/footer.html");
+		});
+	</script>
+</head>
+<body>
+
+    <div id="header"></div>
+
+<div class="grid grid-pad breadcrumps about-us">
+  <div class="col-7-12 page-title">
+		 Rollover Issue
+  </div>
+    <div class="col-5-12 links">
+    	<a href="../../../index.html">Home</a> <i class="fa fa-angle-right"></i>
+        Eductaion <i class="fa fa-angle-right"></i>
+        Basic of transaction making <i class="fa fa-angle-right"></i>
+	</div>
+</div>
+
+<div class="grid grid-pad container-page">
+	<div class="col-4-12 left-sidebar">
+		<ul class="main">
+        	<h3>Education</h3>
+			<li><span><a href="../../markets-overview/index.html">Markets Overview</a> <i class="fa fa-angle-right"></i></span></li>
+            <li><span><a href="../../macro-economic-data/index.html">Macro Economic Data</a> <i class="fa fa-angle-right"></i></span></li>
+            <li><span>First Step</span>
+            	<ul>
+				<li><a href="../basic-of-CFDs.html"><i class="fa fa-angle-right"></i >Basic of CFD's</a></li>
+					<li><a class="current" href="../basic-of-transaction-making.html"><i class="fa fa-angle-right"></i> <strong>Basic of transaction making</strong></a>
+					<ul>
+					<li><a href="first-look-mt4.html"><i class="fa fa-angle-right"></i> First Look at the MetaTrader 4</a></li>
+                    <li><a href="first-Transaction.html"><i class="fa fa-angle-right"></i> The First Transaction</a></li>
+                    <li><a href="account-information.html"><i class="fa fa-angle-right"></i> Information About the Account</a></li>
+                    <li><a href="protecting-the-open-position.html"><i class="fa fa-angle-right"></i> Protecting the Open Position</a></li>
+                    <li><a href="conditional-orders.html"><i class="fa fa-angle-right"></i> Conditional Orders</a></li>
+                    <li><a href="swap-points.html"><i class="fa fa-angle-right"></i> Swap Points</a></li>
+                    <li><a href="rollover-issues.html"><i class="fa fa-angle-right"></i> Rollover Issues</a></li>
+					</ul>
+                    </li>
+					<li><a href="../CFDs-versus-shares-and-futures.html"><i class="fa fa-angle-right"></i> CFDs versus shares and futures</a></li>
+					<li><a href="../faq-first-steps.html"><i class="fa fa-angle-right"></i> FAQ - First steps</a></li>
+                </ul>
+            </li>
+            <li><span><a href="../../abc-of-investments/index.html">ABC of Investments</a> <i class="fa fa-angle-right"></i></span></li>
+            <li><span><a href="../../trader-tools/index.html">Trader Tools</a> <i class="fa fa-angle-right"></i></span></li>
+		</ul>
+	</div>
+
+
+	<div class="col-8-12 content-page">
+    <h1>
+A rollover procedure results from the specifics of the Contracts for Difference and does not influence the financial outcome of the transaction
+</h1>
+    <div class="separator"></div>
+    <p>The following section is of a more complicated nature and it is   addressed basically to investors intending to operate with commodities   and stock exchange indices on the MetaTrader 4 platform provided by   Silver Stone FX.</p>
+    <p>In the case of Contracts for Difference based   upon the futures contracts traded on stock exchanges, in most cases   once per month the necessity for a rollover procedure occurs. This   results from the fact that the CFD instruments are typically based on   the most liquid futures contracts series. As each of the series of stock   exchange futures expires, there is a necessity to change the underlying   futures series for the CFD instrument.</p>
+    <p>What is most important about the rollover   procedure is that it is neutral for the investor, i.e. it does not   influence the financial result from the open position on a given market,   if there are any. The positive (or negative) change of the nominal   price of the CFD contract, caused by a change of underlying futures   series, is offset by negative (or positive respectively) adjustment of   the swap points. It will be clearer if we consider an example of how it   works in practice:</p>
+    <p><strong>Example</strong> <br>
+      Let us assume that the trader has an open   position on the corn market. As the underlying instrument for that CFD   is a futures contract traded on the Chicago Board of Trade stock   exchange, we are looking at the corn futures, expiring in next three   months. Currently the prices are: </p>
+    <p> </p>
+    <ul>
+      <li>Corn on Silver Stone FX platform – 432,40</li>
+      <li>Corn futures expiring this month - 432,40</li>
+      <li>Corn futures expiring in four months - 447,60</li>
+    </ul>
+    <p>As a result of a rollover, the price of the   corn instrument will change from 432,40 to 447,60 (USD), i.e. will rise   by 15,20 USD. Any open positions will be adjusted by the swap points, in   order that the price change caused by the rollover does not influence   the financial result from the transaction.</p>
+    <ul>
+      <li>Long positions – the positive price movement up of 15,20 is offset by negative swap points –15,20.</li>
+      <li>Short positions – the negative price movement down of 15,20 is offset by positive swap points -15,20.</li>
+    </ul>
+    <p>In both cases, the result of the open position does not change, as the operation is of purely a technical nature.</p>
+    </div>
+</div>
+
+
+
+<div id="footer"></div>
+
+<script type="text/javascript">
+function StockPriceTicker(){{var t="",e="",a="",i="",n="",s="^NDX,^GSPC,^HSI,^N225,^FCHI,^GDAXI,^FTSE",c="http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.quotes%20where%20symbol%20in%20(%22"+s+"%22)&env=store://datatables.org/alltableswithkeys",o="";$.get(c,function(s){$(s).find("quote").each(function(){t=$(this).attr("symbol"),$(this).find("Name").each(function(){e=$(this).text()}),$(this).find("LastTradePriceOnly").each(function(){a=$(this).text()}),$(this).find("Change").each(function(){i=$(this).text()}),$(this).find("PercentChange").each(function(){n=$(this).text()});var s="GreenText",c="up_green";parseFloat(i)<0&&(s="RedText",c="down_red"),o=o+"<span class='"+s+"'>",o=o+"<span class='quote'>"+e+" ("+t+")</span> ",o=o+parseFloat(a).toFixed(2)+" ",o=o+"<span class='"+c+"'></span>"+parseFloat(Math.abs(i)).toFixed(2)+" (",o=o+parseFloat(Math.abs(n.split("%")[0])).toFixed(2)+"%)</span>"}),$("#dvStockTicker").html(o),$("#dvStockTicker").jStockTicker({interval:30,speed:2})})}}$(window).load(function(){StockPriceTicker(),setInterval(function(){StockPriceTicker()},6e4)});
+</script>
+<script>
+$(document).ready(function(e){e("#flexinav1").flexiNav({flexinav_effect:"flexinav_hover",flexinav_show_duration:150,flexinav_hide_duration:150,flexinav_show_delay:150,flexinav_trigger:!1,flexinav_hide:!1,flexinav_scrollbars:!0,flexinav_scrollbars_height:360,flexinav_responsive:!0})});
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','../../../../www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52762597-4', 'auto');
+  ga('send', 'pageview');
+
+</script></body>
